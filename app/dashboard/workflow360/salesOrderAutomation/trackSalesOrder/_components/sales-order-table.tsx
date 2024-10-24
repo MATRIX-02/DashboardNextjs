@@ -76,6 +76,7 @@ export default function SalesOrderTable({ data }: SalesOrderTableProps) {
     globalFilterFn: 'contains',
     positionGlobalFilter: 'left',
     muiPaginationProps: {
+      rowsPerPageOptions: [5, 10, 20],
       color: 'primary',
       shape: 'rounded',
       showRowsPerPage: false,
@@ -85,9 +86,9 @@ export default function SalesOrderTable({ data }: SalesOrderTableProps) {
     muiTablePaperProps: {
       elevation: 0,
       sx: {
-        backgroundColor: 'transparent',
+        backgroundColor: '#FBF9FE',
         '& .MuiBox-root': {
-          backgroundColor: 'transparent'
+          backgroundColor: '#FBF9FE'
         }
       }
     },
@@ -98,17 +99,17 @@ export default function SalesOrderTable({ data }: SalesOrderTableProps) {
     },
     muiTableHeadRowProps: {
       sx: {
-        backgroundColor: 'transparent'
+        backgroundColor: '#FBF9FE'
       }
     },
     muiTableProps: {
       sx: {
-        backgroundColor: 'transparent'
+        backgroundColor: '#FBF9FE'
       }
     },
     muiTableBodyRowProps: {
       sx: {
-        backgroundColor: 'transparent'
+        backgroundColor: '#FBF9FE'
       }
     }
   });
