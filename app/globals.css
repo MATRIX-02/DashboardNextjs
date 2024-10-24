@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #fbf9fe;
+    --foreground: #110D0B;
+    --muted: #e9dcfa;
+    --muted-foreground: #423F3E;
+    --popover: #FDF9F7;
+    --popover-foreground: #0D0A09;
+    --card: #faf7fd;
+    --card-foreground: #0D0A09;
+    --border: #F1EFEE;
+    --input: #F1EFEE;
+    --primary: #9747FF;
+    --primary-foreground: #fff;
+    --secondary: #EBEBEA;
+    --secondary-foreground: #575452;
+    --accent: #EBEBEA;
+    --accent-foreground: #575452;
+    --destructive: #671C10;
+    --destructive-foreground: #F5A494;
+    --ring: #DCAA93;
+    --radius: 0.5rem;
+    --chart-1: #bb93dc;
+    --chart-2: #2B9B8C;
+    --chart-3: #254B5C;
+    --chart-4: #EABB4D;
+    --chart-5: #974cf9;
+    --sidebar-background: #fbf6ff;
+    --sidebar-foreground: #403F45;
+    --sidebar-primary: #19191B;
+    --sidebar-primary-foreground: #FAFAFA;
+    --sidebar-accent: #e9dcfa;
+    --sidebar-accent-foreground: #000;
+    --sidebar-border: #E5E7EB;
+    --sidebar-ring: #3B82F6;
+  }
+
+  .dark {
+    --background: #06040F;
+    --foreground: #F7F6FC;
+    --muted: #201F24;
+    --muted-foreground: #9B98A7;
+    --popover: #06040F;
+    --popover-foreground: #F7F6FC;
+    --card: #080613;
+    --card-foreground: #FAF9FD;
+    --border: #1F2937;
+    --input: #1F2937;
+    --primary: #6E35FF;
+    --primary-foreground: #F3EBFF;
+    --secondary: #16151A;
+    --secondary-foreground: #B0AEB6;
+    --accent: #211F28;
+    --accent-foreground: #BAB7C4;
+    --destructive: #FF1A6C;
+    --destructive-foreground: #FFFFFF;
+    --ring: #6E35FF;
+    --chart-1: #6E35FF;
+    --chart-2: #BAB7C4;
+    --chart-3: #F7843D;
+    --chart-4: #B14EE8;
+    --chart-5: #EA3B76;
+    --sidebar-background: #080613;
+    --sidebar-foreground: #F4F4F5;
+    --sidebar-primary: #6E35FF;
+    --sidebar-primary-foreground: #FFFFFF;
+    --sidebar-accent: #27272A;
+    --sidebar-accent-foreground: #F4F4F5;
+    --sidebar-border: #27272A;
+    --sidebar-ring: #6E35FF;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply box-border bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .min-h-screen {
+    min-height: 100vh; /* Fallback */
+    min-height: 100dvh;
+  }
+  .h-screen {
+    height: 100vh; /* Fallback */
+    height: 100dvh;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
